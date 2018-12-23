@@ -109,6 +109,6 @@ bool operator == (const ServerInfo& lval, const ServerInfo& rval)
 
 std::ostream& operator<<(std::ostream& stream, const ServerInfo& val)
 {
-	return stream << val.name << " (" << val.hostname << ":" << val.port << ")";
+	return stream; //  << val.name << " (" << val.hostname << ":" << val.port << ")";
 }
 
