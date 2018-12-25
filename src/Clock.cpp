@@ -81,23 +81,23 @@ std::string Clock::getTimeString() const
 	std::stringstream stream;
 	
 	// only write hours if already player more than 1h
-	if(hours > 0)
-		stream << hours << ":";
-		
-	// write minutes
-	// leading 0 if minutes < 10
-	if(minutes < 10)
-		stream << "0";
-	
-	stream << minutes << ":";
-	
-	// write seconds
-	// leading 0 if seconds < 10
-	if(seconds < 10)
-		stream << "0";
-	
-	stream << seconds;
-	
+	// if(hours > 0)
+	// 	stream << hours << ":";
+
+	// // write minutes
+	// // leading 0 if minutes < 10
+	// if(minutes < 10)
+	// 	stream << "0";
+
+	// stream << minutes << ":";
+
+	// // write seconds
+	// // leading 0 if seconds < 10
+	// if(seconds < 10)
+	// 	stream << "0";
+
+	// stream << seconds;
+
 	// convert stringstream to string and return
 	return stream.str();
 }
