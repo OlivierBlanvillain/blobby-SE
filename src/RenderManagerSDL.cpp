@@ -402,14 +402,14 @@ void RenderManagerSDL::draw()
 	position.x = (int)lround(mBallPosition.x - 2.5);
 	position.w = 5;
 	position.h = 5;
-	SDL_RenderCopy(mRenderer, mMarker[(int)SDL_GetTicks() % 1000 >= 500], 0, &position);
+	SDL_RenderCopy(mRenderer, mMarker[0], 0, &position);
 
 	// Mouse marker
 	position.y = 590;
 	position.x = (int)lround(mMouseMarkerPosition - 2.5);
 	position.w = 5;
 	position.h = 5;
-	SDL_RenderCopy(mRenderer, mMarker[(int)SDL_GetTicks() % 1000 >= 500], 0, &position);
+	SDL_RenderCopy(mRenderer, mMarker[0], 0, &position);
 
 	if(mShowShadow)
 	{
